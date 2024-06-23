@@ -1,15 +1,15 @@
-id = "scss"
-name = "SCSS"
-description = "SCSS language support"
-version = "0.0.3"
+id = "less"
+name = "LESS"
+description = "LESS language support"
+version = "0.0.1"
 schema_version = 1
-authors = ["Raunak Raj <bajrangcoders@gmail.com>"]
-repository = "https://github.com/bajrangCoder/zed-scss"
+authors = ["jimliang <769925821@qq.com>"]
+repository = "https://github.com/jimliang/zed-less"
 
-[grammars.scss]
-repository = "https://github.com/tree-sitter-grammars/tree-sitter-scss"
-commit = "9ab738d22bb248771d42e8678d1a307d14990df1"
+[grammars.less]
+repository = "https://github.com/jimliang/tree-sitter-less"
+commit = "b3654358011022c274c37a51c8b8957f388c0f72"
 
-[language_servers.scss-language-server]
-name = "SCSS Language Server"
-language = "SCSS"
+[language_servers.less-language-server]
+name = "LESS Language Server"
+language = "LESS"

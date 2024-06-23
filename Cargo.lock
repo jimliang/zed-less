@@ -315,7 +315,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "zed_scss"
+name = "zed_less"
 version = "0.0.1"
 dependencies = [
  "zed_extension_api",

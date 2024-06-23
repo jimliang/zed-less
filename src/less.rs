@@ -5,11 +5,11 @@ const SERVER_PATH: &str =
     "node_modules/vscode-langservers-extracted/bin/vscode-css-language-server";
 const PACKAGE_NAME: &str = "vscode-langservers-extracted";
 
-pub struct SCSSExtension {
+pub struct LESSExtension {
     did_find_server: bool,
 }
 
-impl SCSSExtension {
+impl LESSExtension {
     fn server_exists(&self) -> bool {
         fs::metadata(SERVER_PATH).map_or(false, |stat| stat.is_file())
     }
@@ -55,7 +55,7 @@ impl SCSSExtension {
     }
 }
 
-impl zed::Extension for SCSSExtension {
+impl zed::Extension for LESSExtension {
     fn new() -> Self {
         Self {
             did_find_server: false,
@@ -83,4 +83,4 @@ impl zed::Extension for SCSSExtension {
     }
 }
 
-zed::register_extension!(SCSSExtension);
+zed::register_extension!(LESSExtension);

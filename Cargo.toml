@@ -1,11 +1,11 @@
 [package]
-name = "zed_scss"
+name = "zed_less"
 version = "0.0.1"
 edition = "2021"
 license = "MIT"
 
 [lib]
-path = "src/scss.rs"
+path = "src/less.rs"
 crate-type = ["cdylib"]
 
 [dependencies]

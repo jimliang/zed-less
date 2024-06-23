@@ -1,6 +1,6 @@
-name = "SCSS"
-grammar = "scss"
-path_suffixes = ["scss"]
+name = "LESS"
+grammar = "less"
+path_suffixes = ["less"]
 block_comment = ["/* ", " */"]
 autoclose_before = ";:.,=}])>"
 brackets = [
@@ -17,4 +17,4 @@ brackets = [
     ] },
 ]
 word_characters = ["-"]
-prettier_parser_name = "scss"
+prettier_parser_name = "less"

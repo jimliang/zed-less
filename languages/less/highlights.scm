@@ -1,32 +1,19 @@
 [
-  "@at-root"
-  "@debug"
-  "@error"
-  "@extend"
-  "@forward"
-  "@mixin"
-  "@use"
-  "@warn"
+  "@plugin"
 ] @keyword
-
-"@function" @keyword.function
-
-"@return" @keyword.return
-
-"@include" @keyword.import
 
 "@import" @keyword.import
 
-"@keyframes" @keyword.import
+"@media" @keyword
+"@charset" @keyword
+"@namespace" @keyword
+"@supports" @keyword
+"@keyframes" @keyword
 
-[
-  "@while"
-  "@each"
-  "@for"
-  "from"
-  "through"
-  "in"
-] @keyword.repeat
+(at_keyword) @keyword
+(to) @keyword
+(from) @keyword
+(important) @keyword
 
 (js_comment) @comment
 
@@ -39,19 +26,23 @@
   "<="
 ] @operator
 
-(mixin_statement
-  name: (identifier) @function)
+"~" @operator
+">" @operator
+"+" @operator
+"-" @operator
+"*" @operator
+"/" @operator
+"=" @operator
+"^=" @operator
+"|=" @operator
+"~=" @operator
+"$=" @operator
+"*=" @operator
 
-(mixin_statement
-  (parameters
-    (parameter) @variable.parameter))
-
-(function_statement
-  name: (identifier) @function)
-
-(function_statement
-  (parameters
-    (parameter) @variable.parameter))
+"and" @operator
+"or" @operator
+"not" @operator
+"only" @operator
 
 (class_selector
     "." @variable)
@@ -62,11 +53,11 @@
 
 (variable) @variable
 
-(argument) @variable.parameter
-
 (arguments) @variable.parameter
 
 (property_name) @property
+
+(value_value) @property
 
 (pseudo_class_selector) @tag
 
@@ -77,8 +68,6 @@
 
 (pseudo_element_selector
     "::" @variable)
-
-(unit) @attribute
 
 (important) @keyword
 
@@ -100,8 +89,11 @@
 (tag_name) @tag
 
 (string_value) @string
+(integer_value) @number
+(float_value) @number
+(unit) @type
 
 (universal_selector) @punctuation
 
-(include_statement
+(import_statement
   (identifier) @function)

@@ -1,6 +1,6 @@
-# zed-scss
+# zed-less
 
-SCSS language support for [Zed](https://zed.dev).
+LESS language support for [Zed](https://zed.dev).
 
 ## Features
 
@@ -9,7 +9,7 @@ SCSS language support for [Zed](https://zed.dev).
 
 ## Grammar
 
-- [tree-sitter-scss](https://github.com/tree-sitter-grammars/tree-sitter-scss)
+- [tree-sitter-less](https://github.com/jimliang/tree-sitter-less)
 
 ## Feedback
 
@@ -17,24 +17,4 @@ Provide your feedback to improve this extension.
 
 ## Known Issues
 
-- Unable to parse (`#{}` and `@include`):
-
-  1.
-
-  ```scss
-  color: $color; // Correct formatting
-  color: #{$color}; // Breaks formatting
-  color: $color; // Incorrect formatting
-  ```
-
-  2.
-
-  ```scss
-  body {
-    @include fonts.noto-serif-display-400;
-    margin: 0;
-    background-color: #ffffff;
-    color: var(--c-dark);
-    height: 100%;
-  }
-  ```
+- Unable to parse (`background-@{property}` and `mixins`):
