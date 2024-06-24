@@ -17,4 +17,4 @@ Provide your feedback to improve this extension.
 
 ## Known Issues
 
-- Unable to parse (`background-@{property}` and `mixins`):
+- Unable to parse (`mixins`):
