@@ -17,4 +17,5 @@ Provide your feedback to improve this extension.
 
 ## Known Issues
 
-- Unable to parse (`mixins`):
+- Unable to parse `mixins namespace`
+- Unable to parse `Merge properties`
