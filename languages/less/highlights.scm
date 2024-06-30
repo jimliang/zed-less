@@ -9,6 +9,7 @@
 "@namespace" @keyword
 "@supports" @keyword
 "@keyframes" @keyword
+"each" @keyword
 
 (at_keyword) @keyword
 (to) @keyword
@@ -43,6 +44,7 @@
 "or" @operator
 "not" @operator
 "only" @operator
+"+_" @operator
 
 (class_selector
     "." @variable)
@@ -87,6 +89,7 @@
 (class_selector) @tag
 
 (tag_name) @tag
+(class_name) @tag
 
 (string_value) @string
 (integer_value) @number

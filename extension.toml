@@ -8,7 +8,7 @@ repository = "https://github.com/jimliang/zed-less"
 
 [grammars.less]
 repository = "https://github.com/jimliang/tree-sitter-less"
-commit = "3d1d4e6b48e5561467738aff557af0abdda3239f"
+commit = "307541e7b4d9d890a0d85bd9acf7da777d26d323"
 
 [language_servers.less-language-server]
 name = "LESS Language Server"
