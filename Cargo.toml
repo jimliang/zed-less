@@ -1,6 +1,6 @@
 [package]
 name = "zed_less"
-version = "0.0.1"
+version = "0.1.0"
 edition = "2021"
 license = "MIT"
 
@@ -9,4 +9,4 @@ path = "src/less.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-zed_extension_api = "0.0.6"
+zed_extension_api = "0.7.0"
